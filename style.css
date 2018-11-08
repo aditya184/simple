@@ -1,0 +1,922 @@
+*{margin:0;padding:0;}
+
+h1{
+    padding:0;
+}
+/* Navbar */
+ .share{
+    float:right;
+    margin-top:-35px;
+    margin-right: 55px;
+} 
+
+.navbar-brand {
+    margin:0 auto;
+    float: none;
+    /* height: 50px; */
+    /* margin-top: 25px; */
+    padding-top: 8px;
+    padding-left:0 !important;
+    padding-right:0 !important;  
+    /* font-size: 18px;
+     line-height: 2px; */
+}
+
+ .hamburger {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    top: 8px;
+    right: 10px;
+    margin-top: -10px;
+  }
+  .hamburger div {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background-color:#000;
+    margin-top: 7px;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+  } 
+
+  #toggle {
+    display: none;
+  }
+ 
+
+  #toggle:checked + .hamburger .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+
+  #toggle:checked + .hamburger .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #toggle:checked + .hamburger .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+  }
+
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #1575c2;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .nav .nav-wrapper {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  nav {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  nav a {
+    margin-top: 1.80em;
+    color: #eee;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 2.3em;
+    letter-spacing: 3px;
+    transition: all 0.1s ease;
+    text-align: center;
+    float: left;
+  }
+
+  nav a {
+    margin-top: 30px;
+  }
+
+  #toggle:checked + .hamburger + .nav .nav-wrapper nav a {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  #toggle:checked + .hamburger + .nav .nav-wrapper nav a:hover {
+    opacity: 1;
+    color: white;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  .navbar-brand img{
+    width: 120px;
+    margin: 0 auto 0;
+  }
+
+  /* Navbar End */
+
+  /* Banner */
+.banner{
+    background-image: linear-gradient(to left, #022553, #022553, #12457e, #06588a,#06588a,#043767,#043767, #043464, #043464);
+}
+
+.banner .leftbanner{
+    /* width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0; */
+    padding: 20px 0 0 90px;
+}
+.banner .rightbanner{
+    margin: 0 auto;
+    margin-top: 68px;
+    padding: 60px 0 0 0;
+}
+.rightbanner{
+    width: 50%;
+    /* margin: 180px 0 0 0; */
+}
+.banner h2{
+    margin: 130px 0 0;
+    /* padding: 0 50px 0 50px; */
+    color: #fff;
+}
+.banner p{
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0;
+}
+.banner .btn{
+    margin: 50px 0 0 15px;
+    background: #fff;
+    color: #1574c6;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform:uppercase;
+    font-weight: bold;
+    border:1px solid #fff;
+    border-radius:8px;
+}
+
+/* Banner End */
+
+/* Product Section */
+.product{
+    padding-bottom: 30px;
+}
+.product h5{ 
+    margin-top:35px;
+    margin-bottom: 15px; 
+    font-weight: bold;
+    font-size: 20px;
+    color: #1575c2;
+ }
+ .pricebox{
+     text-align: center;
+     /* margin-left: 14px;*/
+     margin-top: 20px;
+     border:2px solid #1575c2;
+     position: relative;
+     z-index:2;
+     /* margin-right: 320px; */
+ }
+ 
+ .prodbuy{
+     position: absolute;
+     top:54px;
+     left:0;
+     text-align: center;
+ }
+ 
+ .product .mainprice{
+         float:left;
+         vertical-align:top;
+         margin:20px 0px 10px;
+         margin-top:10px;
+         margin-left: 10px;
+         font-size: 22px;
+         color:#1575c2;
+         /* padding-top: 20px; */
+ 
+ }
+ 
+ .product .dicountprice{
+     /* overflow:hidden; */
+     padding-top: 8px;
+     line-height: 22px;
+     font-weight: bold;
+     margin-top:20px;
+     font-size: 30px;
+     color: #1575c2;
+     padding-left: 80px;
+     margin-bottom: 30px;
+     /* color:     #686868
+  ;  */
+  }
+ .product p{
+     margin-left: 5px;
+     line-height: 2.2;
+     font-size:14px;
+     text-align: left;
+ }
+ .product h6{
+    margin: 0 5px;
+    padding-bottom:2px;
+ }
+ 
+ /* .product h4 a{
+     font-weight: normal;
+     margin: 0 20px;
+     font-size: 12px;
+     text-transform: uppercase;
+     color:#666;
+     position: absolute;
+     top:135%;
+     left:20%;
+     text-decoration: none;
+ } */
+ .product button{
+     margin: 10px 40px;
+     /* position: absolute;
+     top:70%;
+     left:20%; */
+     font-weight: bold;
+     padding:5px 30px;
+     background-color: #1575c2;
+ }
+ .product .product1{
+    position: relative;
+    z-index: 1;
+ }
+ 
+
+ .offer{
+    position: absolute;
+    /* right: -540px; */
+    /* top: 150px; */
+    top: 180px;
+    right: 22px;
+    z-index:-1;
+}
+
+.product .discount{
+    position: absolute;
+    z-index: 2;
+    top: 55px;
+    bottom: 0px;
+    right: 0px;
+    left: 50px;
+    color: #fff
+}
+
+.discount h2{    
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.discount h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+  
+ .strikethrough p{
+     font-size: 15px;
+ }
+ .strikethrough {
+     position: relative;
+     margin-left: 40px;
+   }
+   .strikethrough:before {
+     position: absolute;
+     content: "";
+     left: 0;
+     top: 50%;
+     right: 0;
+     border-top: 1px solid;
+     border-color: red;    -webkit-transform:rotate(-5deg);
+     -moz-transform:rotate(-5deg);
+     -ms-transform:rotate(-5deg);
+     -o-transform:rotate(-5deg);
+     transform:rotate(-30deg);
+   }
+ 
+/* Product End*/
+
+/* Comments section */
+.comments{
+    /* background: #999; */
+    padding-bottom: 25px;
+
+}
+
+.comments h4{
+    color:#fff;
+    background-color: #1575c2;
+ padding:5px 5px;
+}
+
+.carousel-control.left{
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
+   }
+
+.carousel-control.right{
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
+}
+
+.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{
+    margin-left: -90px !important;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+    margin-right: -90px !important;
+}
+
+
+.col-md-3{
+    /*border:1px solid;*/
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.col-md-6{
+    z-index: 0;
+}
+
+.carousel-inner{
+    z-index: 0;
+}
+
+.container-img img {
+    display:block;
+    /* background:red; */
+    width:85%;
+    /* width: 70px; */
+    height:auto;
+}
+
+.container-img {
+    float:left;
+    vertical-align:top;
+    margin:25px 0px 10px;
+    padding-top: 20px;
+}
+
+
+
+.container-paragraph {
+    overflow:hidden;
+    padding-top: 26px;
+    line-height: 22px;
+    font-weight: bold;
+    color: 	#686868;   
+}
+
+.container-paragraph h5{
+    color: #1574c6;
+    font-weight: bold;
+}
+
+.comment .container-img{
+    margin: 0 auto;
+}
+
+.comment p{
+    text-align: justify;
+}
+
+.comment .container-paragraph h5{
+    font-weight: bold;
+  font-size: 20px;
+}
+
+.comment .container-paragraph h6{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.comment .col-md-12 p{
+    margin-top: 15px;
+}
+/* Comments Section End */
+
+
+/* Buynow section*/
+.buynow{
+    background-image: linear-gradient(to left, #022553, #022553, #12457e, #06588a,#06588a,#043767,#043767, #043464, #043464);
+    /* position: relative;
+    z-index: 1; */
+    /* height: 240px; */
+}
+.buynow .leftsection{
+    padding: 20px 0 0 90px;
+    margin-top: 200px; 
+}
+
+.buynow button{
+    margin-top: 10px;
+    margin-left: 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1575c2;
+    background-color: #fff;
+    font-size: 18px;
+    border:1px solid #fff;
+    border-radius:8px;
+    padding: 10px 25px;
+}
+
+.buynow .leftsection p{
+    padding-left: 90;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Buynow Section End */
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* body{
+        border:1px solid red;
+    } */
+
+    .banner{
+        height: auto;
+        width: 100%;
+    }
+    .banner .leftbanner {
+        padding: 0 0 60px 0px;
+        text-align: center;
+    }
+    .banner .topbanner{
+        padding-top: 80px;
+        width: 60%;
+    }
+    .banner img{
+        padding: 0px 0 0 0;
+        margin: 0 auto;
+    }
+    .banner .leftbanner img{
+        width: 90%;
+    }
+    .banner h2{
+        margin: 40px 0 0;
+        color: #fff;
+        font-size: 14px;
+    }
+    .banner p{
+        font-size: 12px;
+        padding: 15px 0;
+    }
+    .banner .btn{
+        margin: 35px 0 0 15px;
+        background: #fff;
+        color: #1574c6;
+        padding: 10px 22px;
+        font-size: 16px;
+        text-transform:uppercase;
+        font-weight: bold;
+    }
+     
+    .product .mainprice 
+    {
+        margin-left: 10px;
+    }   
+
+    .pricebox{
+        margin-right: 10px;
+        margin-left:10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .product .discountprice {
+        padding-left: 120px;
+    }
+
+    .product .product1{
+        width:80%;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    /* .product .offer{
+        position: absolute;
+        left: 185px;
+        width: 25%;
+        bottom: 100px;
+        top: 400px;
+        z-index: -1;
+    } */
+
+    .product .offer{
+        position: absolute;
+        /* right: -540px; */
+        /* top: 150px; */
+        width: 30%;
+         top: 70px;
+         bottom: 0px;
+         right: 0px;
+         left: 170px;
+        z-index:-1;
+    }
+    
+    .product .discount{
+        position: absolute;
+        z-index: 2;
+        top: 16px;
+        left: 16px;
+        bottom: 0px;
+        right: 0px;
+        color: #fff
+    }
+    
+    .discount h2{    
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .discount h3{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    .product h5,.product h6{
+        text-align: center;
+    }
+
+    .product p{
+        text-align: center;
+        line-height: 2.5;
+    }
+
+
+    .buynow{
+        height: auto;
+        width: 100%;
+    }
+
+    .buynow .leftsection{
+        padding: 0 0 20px 0px;
+        text-align: center;
+        padding-top:0;
+        margin-top: 0px;
+    }
+    .buynow .topsection{
+        width: 60%;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+    .buynow img{
+        padding: 0px 0 0 0;
+        margin: 0 auto;
+    }
+    .buynow .leftsection img{
+        width: 70%;
+    }
+
+    .buynow .leftsection p{
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+    }
+    .buynow .btn {
+        margin: 0 0 0 15px;
+        background: #fff;
+        color: #1574c6;
+        padding: 10px 22px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}   
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* body{
+        border:1px solid red;
+    } */
+
+    .banner{
+        height: auto;
+        width: 100%;
+    }
+    .banner .leftbanner {
+        padding: 0 0 60px 0px;
+        text-align: center;
+    }
+    .banner .topbanner{
+        padding-top: 80px;
+        width: 60%;
+    }
+    .banner img{
+        padding: 0px 0 0 0;
+        margin: 0 auto;
+    }
+    .banner .leftbanner img{
+        width: 90%;
+    }
+    .banner h2{
+        margin: 40px 0 0;
+        color: #fff;
+        font-size: 18px;
+    }
+    .banner p{
+        font-size: 14px;
+        padding: 15px 0;
+    }
+    .banner .btn{
+        margin: 35px 0 0 15px;
+        background: #fff;
+        color: #1574c6;
+        padding: 10px 22px;
+        font-size: 18px;
+        text-transform:uppercase;
+        font-weight: bold;
+    }
+
+    .product .mainprice 
+    {
+        margin-left: 10px;
+    }   
+
+    .pricebox{
+        margin-right: 10px;
+        margin-left:10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .product .discountprice {
+        padding-left: 120px;
+    }
+
+    .product .product1{
+        width:80%;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .product .offer{
+        position: absolute;
+        /* right: -540px; */
+        /* top: 150px; */
+        width: 30%;
+        top: 130px;
+        left: 280px;
+        bottom: 0px;
+        right: 0px;
+        z-index:-1;
+    }
+    
+    .product .discount{
+        position: absolute;
+        z-index: 2;
+        top: 30px;
+        left: 30px;
+        bottom: 0px;
+        right: 0px;
+        color: #fff
+    }
+    
+    .discount h2{    
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .discount h3{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+
+    .product h5,.product h6{
+        text-align: center;
+    }
+
+    .product p{
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    .buynow{
+        height: auto;
+        width: 100%;
+    }
+
+    .buynow .leftsection{
+        padding: 0 0 20px 0px;
+        text-align: center;
+        padding-top:0;
+        margin-top: 0px;
+    }
+    .buynow .topsection{
+        width: 60%;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+    .buynow img{
+        padding: 0px 0 0 0;
+        margin: 0 auto;
+    }
+    .buynow .leftsection img{
+        width: 70%;
+    }
+
+    .buynow .leftsection p{
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    .buynow .btn {
+        margin: 0 0 0 15px;
+        background: #fff;
+        color: #1574c6;
+        padding: 10px 22px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner{
+        height: auto;
+        width: 100%;
+    }
+    .banner .leftbanner {
+        padding: 0 0 60px 0px;
+        text-align: center;
+    }
+    .banner .topbanner{
+        padding-top: 80px;
+        width: 60%;
+    }
+    .banner img{
+        padding: 0px 0 0 0;
+        margin: 0 auto;
+    }
+    .banner .leftbanner img{
+        width: 70%;
+    }
+    .banner h2{
+        margin: 40px 0 0;
+        color: #fff;
+        font-size: 18px;
+    }
+    .banner p{
+        font-size: 14px;
+        padding: 15px 0;
+    }
+    .banner .btn{
+        margin: 35px 0 0 15px;
+        background: #fff;
+        color: #1574c6;
+        padding: 10px 22px;
+        font-size: 18px;
+        text-transform:uppercase;
+        font-weight: bold;
+    }
+
+
+    /* .product h5,.product h6{
+        text-align: center;
+    }
+
+    .product p{
+        text-align: center;
+        line-height: 2.5;
+    } */
+
+    .product .mainprice 
+    {
+        margin-left: 10px;
+    }   
+
+    .pricebox{
+        text-align: center;
+        margin-right: 10px;
+        margin-left:10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .product .discountprice {
+        padding-left: 120px;
+    }
+
+    .product .product1{
+        width:80%;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .product .offer{
+        position: absolute;
+        /* right: -540px; */
+        /* top: 150px; */
+        width: 30%;
+        left: auto;
+        top: 160px;
+        bottom: 0px;
+        right: 0px;
+        z-index:-1;
+    }
+    
+    .product .discount{
+        position: absolute;
+        z-index: 2;
+        top: 50px;
+        left: 40px;
+        bottom: 0px;
+        right: 0px;
+        color: #fff
+    }
+    
+    .discount h2{    
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .discount h3{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+
+    .product h5,.product h6{
+        text-align: center;
+    }
+
+    .product p{
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    .buynow{
+        height: auto;
+        width: 100%;
+    }
+
+    .buynow .leftsection{
+        padding: 0 0 20px 0px;
+        text-align: center;
+        padding-top:0;
+        margin-top: 150px;
+    }
+    .buynow .topsection{
+        width: 60%;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+    .buynow img{
+        padding: 0px 0 0 0;
+        margin: 0 auto;
+    }
+    .buynow .leftsection img{
+        width: 70%;
+    }
+
+    .buynow .leftsection p{
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    .buynow .btn {
+        margin: 0 0 0 15px;
+        background: #fff;
+        color: #1574c6;
+        padding: 10px 22px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
